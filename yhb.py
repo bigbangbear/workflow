@@ -13,6 +13,7 @@ from workflow import Workflow3, ICON_INFO, ICON_HOME, ICON_USER, ICON_WEB, ICON_
 from workflow.notify import notify
 from workflow import web
 
+# 时间戳转换
 def timeToDate(timestampStr):
     timestamp = float(timestampStr)
     time_local = time.localtime(timestamp)
@@ -20,15 +21,33 @@ def timeToDate(timestampStr):
     dt = time.strftime("%Y-%m-%d %H:%M:%S",time_local)
     return dt
 
+# 跳转到LeetCode
+def goLeetcode(info):
+    if info:
+       url = 'https://leetcode.com/problemset/all/?difficulty=Medium&status=Todo&search='+info
+    else:
+        url = 'https://leetcode.com/problemset/all/?difficulty=Medium&status=Todo'
+    return url
+
 def main(wf):
     args = wf.args
-    wf.logger.debug(args)
-    wf.add_item(title='时间戳',
-            subtitle=timeToDate(args[0]),
-            arg='url',
-            valid=True,
-            )
-    wf.send_feedback()
+    if len(args) > 1:
+        userInput = args[1]
+    else:
+        userInput = ''
+    action = args[0]
+    wf.logger.debug('user input : '+userInput)
+
+    if action == 'time':
+        wf.add_item(title='时间戳',
+                subtitle=timeToDate(userInput),
+                valid=True)
+        wf.send_feedback()
+    elif action == 'leetcode':
+        wf.add_item(title='搜索',
+                arg=goLeetcode(userInput),
+                valid=True)
+        wf.send_feedback()
 
 if __name__ == '__main__':
     # Create a global `Workflow3` object
