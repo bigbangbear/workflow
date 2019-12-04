@@ -17,14 +17,13 @@ from workflow import web
 def timeToDate(timestampStr):
     timestamp = float(timestampStr)
     time_local = time.localtime(timestamp)
-    #转换成新的时间格式(2016-05-05 20:28:54)
     dt = time.strftime("%Y-%m-%d %H:%M:%S",time_local)
     return dt
 
 # 跳转到LeetCode
 def goLeetcode(info):
     if info:
-       url = 'https://leetcode.com/problemset/all/?difficulty=Medium&status=Todo&search='+info
+        url = 'https://leetcode.com/problemset/all/?difficulty=Medium&status=Todo&search='+info
     else:
         url = 'https://leetcode.com/problemset/all/?difficulty=Medium&status=Todo'
     return url
