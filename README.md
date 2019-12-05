@@ -6,3 +6,7 @@
 * [python workflow 官方教程](https://www.deanishe.net/alfred-workflow/tutorial_1.html#creating-a-new-workflow)
 
 ### 时间戳转换
+
+### LeetCode
+* 需求：搜索题目·随机刷题
+* 实现：打开指定 URL
