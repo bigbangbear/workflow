@@ -23,10 +23,22 @@ def timeToDate(timestampStr):
 # 跳转到LeetCode
 def goLeetcode(info):
     if info:
-        url = 'https://leetcode.com/problemset/all/?search='+info
+        if info == 'sb':
+            url = 'https://www.yuque.com/qingling-w9d0v/davayg'
+            wfAdd('语雀', url)
+        else:
+            url = 'https://leetcode.com/problemset/all/?search='+info
+            wfAdd('搜索', url)
     else:
         url = 'https://leetcode.com/problemset/all/?difficulty=Medium&status=Todo'
+        wfAdd('随机', url)
     return url
+
+def wfAdd(title, info):
+    wf.add_item(title,
+            arg=info,
+            valid=True)
+    return
 
 def main(wf):
     args = wf.args
@@ -41,12 +53,9 @@ def main(wf):
         wf.add_item(title='时间戳',
                 subtitle=timeToDate(userInput),
                 valid=True)
-        wf.send_feedback()
     elif action == 'leetcode':
-        wf.add_item(title='搜索',
-                arg=goLeetcode(userInput),
-                valid=True)
-        wf.send_feedback()
+        goLeetcode(userInput)
+    wf.send_feedback()
 
 if __name__ == '__main__':
     # Create a global `Workflow3` object
