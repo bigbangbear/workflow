@@ -23,7 +23,7 @@ def timeToDate(timestampStr):
 # 跳转到LeetCode
 def goLeetcode(info):
     if info:
-        url = 'https://leetcode.com/problemset/all/?difficulty=Medium&status=Todo&search='+info
+        url = 'https://leetcode.com/problemset/all/?search='+info
     else:
         url = 'https://leetcode.com/problemset/all/?difficulty=Medium&status=Todo'
     return url
