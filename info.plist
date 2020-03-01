@@ -31,15 +31,67 @@
 				<false/>
 			</dict>
 		</array>
+		<key>524AFE60-544A-4457-AEB1-C65122AAAC3E</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>7E9C92CF-1B0C-466D-933F-24214E672507</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>729A20D4-D175-4C5F-B057-E65722D35351</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>1FF7DF98-7C07-465D-A307-0FDC93898918</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>7E9C92CF-1B0C-466D-933F-24214E672507</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>DB05964B-83CF-4D1B-8930-D8F5CA6457A6</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>DB05964B-83CF-4D1B-8930-D8F5CA6457A6</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>729A20D4-D175-4C5F-B057-E65722D35351</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 	</dict>
 	<key>createdby</key>
 	<string>yuhuibin</string>
 	<key>description</key>
-	<string>时间戳转换</string>
+	<string>熊的工具</string>
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
-	<string>时间戳</string>
+	<string>炸炸熊</string>
 	<key>objects</key>
 	<array>
 		<dict>
@@ -159,6 +211,204 @@
 			<key>version</key>
 			<integer>3</integer>
 		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>yhb:p</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>script</key>
+				<string>python timer.py {query}</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>stay foolish stay hungry</string>
+				<key>title</key>
+				<string>番茄钟</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>729A20D4-D175-4C5F-B057-E65722D35351</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>yhb:show</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>script</key>
+				<string>defaults write com.apple.finder CreateDesktop true
+killall Finder</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>stay foolish stay hungry</string>
+				<key>title</key>
+				<string>显示桌面</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>DB05964B-83CF-4D1B-8930-D8F5CA6457A6</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>yhb:hide</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>script</key>
+				<string>defaults write com.apple.finder CreateDesktop false
+killall Finder</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string>stay foolish stay hungry</string>
+				<key>title</key>
+				<string>隐藏桌面</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>7E9C92CF-1B0C-466D-933F-24214E672507</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>yhb:http</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>script</key>
+				<string>python http.py code {query}</string>
+				<key>scriptargtype</key>
+				<integer>0</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string>HTTP CODE</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>524AFE60-544A-4457-AEB1-C65122AAAC3E</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
 	</array>
 	<key>readme</key>
 	<string>Alfred's Script Filter object is extremely powerful, and gives you control over the results displayed in Alfred.
@@ -171,23 +421,51 @@ A new option now exists for Script Filters, "Alfred filters results". This allow
 		<key>1FF7DF98-7C07-465D-A307-0FDC93898918</key>
 		<dict>
 			<key>xpos</key>
-			<integer>155</integer>
+			<integer>170</integer>
 			<key>ypos</key>
-			<integer>315</integer>
+			<integer>170</integer>
+		</dict>
+		<key>524AFE60-544A-4457-AEB1-C65122AAAC3E</key>
+		<dict>
+			<key>xpos</key>
+			<integer>160</integer>
+			<key>ypos</key>
+			<integer>725</integer>
 		</dict>
 		<key>65B1AD04-CF54-4742-9CD4-B3D47BBF973E</key>
 		<dict>
 			<key>xpos</key>
-			<integer>175</integer>
+			<integer>165</integer>
 			<key>ypos</key>
-			<integer>135</integer>
+			<integer>20</integer>
+		</dict>
+		<key>729A20D4-D175-4C5F-B057-E65722D35351</key>
+		<dict>
+			<key>xpos</key>
+			<integer>165</integer>
+			<key>ypos</key>
+			<integer>310</integer>
 		</dict>
 		<key>7C06E770-688C-42FA-A653-51E4E9B91F84</key>
 		<dict>
 			<key>xpos</key>
-			<integer>445</integer>
+			<integer>405</integer>
 			<key>ypos</key>
-			<integer>310</integer>
+			<integer>165</integer>
+		</dict>
+		<key>7E9C92CF-1B0C-466D-933F-24214E672507</key>
+		<dict>
+			<key>xpos</key>
+			<integer>165</integer>
+			<key>ypos</key>
+			<integer>585</integer>
+		</dict>
+		<key>DB05964B-83CF-4D1B-8930-D8F5CA6457A6</key>
+		<dict>
+			<key>xpos</key>
+			<integer>165</integer>
+			<key>ypos</key>
+			<integer>450</integer>
 		</dict>
 	</dict>
 	<key>version</key>

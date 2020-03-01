@@ -10,3 +10,6 @@
 ### LeetCode
 * 需求：搜索题目·随机刷题
 * 实现：打开指定 URL
+
+### Http Code
+* 需求：展示 Http code 的含义

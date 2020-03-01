@@ -16,6 +16,8 @@ from workflow import web
 # 时间戳转换
 def timeToDate(timestampStr):
     timestamp = float(timestampStr)
+    if timestamp > 1000000000:
+        timestamp = timestamp / 1000;
     time_local = time.localtime(timestamp)
     dt = time.strftime("%Y-%m-%d %H:%M:%S",time_local)
     return dt
