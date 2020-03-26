@@ -20,7 +20,9 @@ def getCodeInfo(code):
             [300, 'Multiple Choices: 重定向'],
             [400, 'Bad Request: 参数错误'],
             [401, 'Unauthorized: 未授权'],
+            [404, "Not Found: 未找到网页"],
             [500, 'Internal Server Error: 服务器错误'],
+            [502, "Bad Gateway: 错误网关 "],
     ]
     for tmp in codelist:
         if tmp[0] == int(code):

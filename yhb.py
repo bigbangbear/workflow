@@ -29,10 +29,10 @@ def goLeetcode(info):
             url = 'https://www.yuque.com/qingling-w9d0v/davayg'
             wfAdd('语雀', url)
         else:
-            url = 'https://leetcode.com/problemset/all/?search='+info
+            url = 'https://leetcode-cn.com/problemset/all/?search='+info
             wfAdd('搜索', url)
     else:
-        url = 'https://leetcode.com/problemset/all/?difficulty=Medium&status=Todo'
+        url = 'https://leetcode-cn.com/problemset/all/?difficulty=Medium&status=Todo'
         wfAdd('随机', url)
     return url
 
